@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.search-page{
+    width: 100%;
+    height: 85vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.4),rgba(0,0,0,1)), url("https://media.istockphoto.com/photos/assorted-indian-non-vegetarian-food-recipe-served-in-a-group-includes-picture-id1169694902?k=20&m=1169694902&s=612x612&w=0&h=fcipoyPcRtCEK3rsFiSbU8Tt7Tj5lm-VsxyvVXHCfL4=");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.resto-det{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+.resto-det h1{
+    font-size: 3.5em;
+    font-weight: 800;
+    font-family: "Poppins",sans-serif;
+    color: white;
+    text-align: center;
+}
+.resto-det p{
+    font-size: 1.6em;
+    font-family: "Poppins",sans-serif;
+    color: #d9d9d9;
+    text-align: center;
+}
+.search-comp{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    top: 40%;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.search-inp-btn{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.search-inp{
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    border: none;
+    outline: none;
+    font-size: 1.15em;
+    font-weight: 500;
+    font-family: "Poppins",sans-serif;
+    color: black;
+    padding-left: 1em;
+}
+.search-inp::placeholder{
+    color: #333;
+}
+.search-btn{
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    font-size: 2em;
+    padding-top: 0.15em;
+    cursor: pointer;
+}
+.auto-complete-suggestion{
+    width: 100%;
+    max-height: 40vh;
+    background-color: transparent;
+    overflow: auto;
+    overflow-x: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+.auto-complete-suggestion,.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.auto-complete-suggestion::-webkit-scrollbar {
+    width: 6px;
+}
+.auto-complete-suggestion::-webkit-scrollbar-track {
+    background: transparent; 
+}
+.auto-complete-suggestion::-webkit-scrollbar-thumb {
+    background: transparent; 
+    border-radius: 8px;
+}
+.auto-complete-suggestion ul{
+    list-style: none;
+    text-decoration: none;
+}
+.auto-complete-suggestion ul li{
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: "Poppins",sans-serif;
+    color: black;
+    margin: 0.3em 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 0.45em 0.3em;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    display: none;
+    text-decoration: none;
+}
+.active ul li{
+    display: block;
+}
+.auto-complete-suggestion ul li:hover{
+    background-color: whitesmoke;
+}
+
+@media screen and (max-width: 1025px){
+    .search-page{
+        background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.4),rgba(0,0,0,1)), url("https://media.istockphoto.com/photos/indian-food-flatlay-picture-id1363049240?k=20&m=1363049240&s=612x612&w=0&h=40QZgx5X-pj-U_WSGYtiNo9JAT8d-csxf4bYmIbqtfM=");
+    }
+    .search-comp{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .search-page{
+        background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.4), rgba(0,0,0,1)), url("https://media.istockphoto.com/photos/indian-cuisine-dinner-tandoori-chicken-biryani-picture-id1250399546?k=20&m=1250399546&s=612x612&w=0&h=WEpfB7H1JurCNdcFgrbFtxPWIlivlKn2DhUsNAMRRu0=");
+    }
+    .resto-det{
+        margin-top: 8em;
+    }
+    .resto-det h1{
+        font-size: 2.6em;
+    }
+    .resto-det p{
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .resto-det{
+        margin-top: 4em;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .search-page{
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.4), rgba(0,0,0,1)), url("https://media.istockphoto.com/photos/assorted-indian-food-for-lunch-or-dinner-rice-lentils-paneer-dal-picture-id996188546?k=20&m=996188546&s=612x612&w=0&h=zQ84AjW9otAutJq5s0xc7_DPwUU05RjNBh8FQPmRdPI=");
+    }
+    .search-comp{
+        top: 50%;
+    }
+    .resto-det{
+        height: 110px;
+        margin-top: 4.5em;
+    }
+    .resto-det h1{
+        font-size: 1.8em;
+    }
+    .resto-det p{
+        font-size: 1.2em;
+    }
+    .search-comp{
+        width: 90%;
+    }
+    .search-inp{
+        font-size: 1em;
+        padding-left: 0.7em;
+    }
+    .search-btn{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .search-comp{
+        width: 95%;
+        top: 60%;
+    }
+    .resto-det h1{
+        font-size: 1.6em;
+    }
+    .resto-det p{
+        font-size: 0.9em;
+    }
+    .auto-complete-suggestion ul li{
+        font-size: 1em;
+    }
+}

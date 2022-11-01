@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* review page starts */
+.dish-review-page{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+    padding-bottom: 2em;
+}
+.dish-review-text{
+    width: 100%;
+    height: 60px;
+    color: white;
+    font-size: 2em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    padding: 0.2em 0.4em;
+    border-bottom: 4px solid #ccc;
+}
+.dish-add-review-text{
+    width: 95%;
+    height: 50px;
+    text-align: left;
+    font-size: 1.4em;
+    font-family: "Poppins",sans-serif;
+    padding: 0.4em;
+    margin-top: 0.2em;
+    color: #ccc;
+}
+.review-form{
+    width: 95%;
+    height: auto;
+}
+.dish-add-review-comp{
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    background-color: #262626;
+    margin-top: 0.5em;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.dish-add-rev-c1{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.dish-add-rev-inp{
+    width: 90%;
+    height: 50px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.user-rev-inp{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    font-family: "Poppins",sans-serif;
+    padding: 0 0 0 0.6em;
+    color: black;
+    background-color: transparent;
+}
+.dish-add-rev-options{
+    width: 90%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.dish-add-rev-opt1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.dish-add-rev-opt1 h1{
+    font-family: "Poppins",sans-serif;
+    color: #aaa;
+    font-size: 1.6em;
+}
+.dish-add-rev-rating{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.rate{
+    background-color: #00ff00;
+}
+.dish-add-rev-rating p{
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: "Poppins",sans-serif;
+    color: black;
+    padding-top: 1px;
+}
+.dish-add-rev-c2{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-rev-btn{
+    width: 90px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    font-size: 1.5em;
+    font-family: "Poppins",sans-serif;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dish-show-review-comp{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
+    border-radius: 8px;
+}
+.dish-show-rev-for{
+    width: 100%;
+    height: 50px;
+    margin: 0.5em 0;
+    padding: 0.3em;
+    font-size: 1.5em;
+    font-family: "Poppins",sans-serif;
+    color: whitesmoke;
+}
+.dish-show-review-comp-ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dish-show-review-comp-li{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.no-review-msg{
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    font-size: 1.3em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    color: white;
+    padding: 0.4em 0.5em;
+}
+.read-more-reviews-btn{
+    width: 140px;
+    height: 35px;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: "Poppins",sans-serif;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1030px){
+    .dish-add-rev-opt1 h1{
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .dish-add-review-comp{
+        height: auto;
+        flex-direction: column;
+        padding: 0.5em 0;
+    }
+    .dish-add-rev-c1, .dish-add-rev-c2 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0.5em;
+    }
+    .dish-add-rev-inp{
+        margin: 0.5em 0;
+    }
+    .dish-add-rev-c2 {
+        width: 100%;
+        height: auto;
+        margin-top: 0.5em;
+    }
+    .dish-add-rev-options{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .dish-add-rev-options{
+        height: auto;
+        flex-direction: column;
+    }
+    .dish-add-rev-opt1{
+        width: 100%;
+        height: auto;
+        margin: 0.3em 0;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .dish-review-page{
+        width: 100%;
+    }
+    .dish-review-text{
+        font-size: 1.7em;
+        font-weight: 500;
+    }
+    .dish-add-review-text{
+        font-size: 1.2em;
+        padding: 0.4em 0;
+    }
+    .dish-add-rev-inp{
+        width: 95%;
+    }
+    .user-rev-inp{
+        font-size: 1em;
+        font-weight: 500;
+    }
+    .dish-add-rev-opt1 h1{
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+    .dish-add-rev-rating{
+        width: 45px;
+    }
+    .add-rev-btn{
+        width: 95%;
+        height: 40px;
+        font-size: 1.3em;
+    }
+    .dish-show-review-comp{
+        margin-top: 1em;
+    }
+    .dish-show-rev-for{
+        font-size: 1.2em;
+        font-weight: 500;
+        margin: 0.3em 0;
+    }
+    .no-review-msg{
+        font-size: 1em;
+    }
+}

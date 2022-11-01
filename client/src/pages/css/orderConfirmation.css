@@ -1,0 +1,576 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.order-confirmation-page{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+.your-order-section{
+    width: 95%;
+    height: auto;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.your-order-head{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.your-order-head-text{
+    color: #595959;
+    font-size: 1.2em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    padding: 0.25em 0.4em;
+}
+.your-order-edit-btn{
+    width: 80px;
+    height: 30px;
+    background-color: #d9d9d9;
+    color: black;
+    font-size: 1em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    padding: 0 0.5em;
+    margin: auto 1em;
+}
+.your-order-display{
+    width: 98%;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: auto;
+    margin: 0.5em auto;
+}
+/* scroll bar for order dishes  */
+.your-order-display::-webkit-scrollbar {
+    height: 6px;
+}
+.your-order-display::-webkit-scrollbar-track {
+    background: transparent; 
+}
+.your-order-display::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 5px; 
+}
+.your-order-display::-webkit-scrollbar-thumb:hover {
+    background: #f2f2f2; 
+}
+.your-order-display-ul{
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    list-style: none;
+    text-decoration: none;
+}
+.your-order-display-ul-li{
+    width: 200px;
+    height: 200px;
+    margin: auto 0.5em;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.your-details-comp, .coupons-section{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.your-details-head, .coupons-head, .cancellation-policy-head-text{
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.your-details-l{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5em;
+    padding: 0 0.5em;
+}
+.your-details-head-text{
+    font-size: 0.95em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    color: black;
+}
+.your-details-lower-text{
+    font-size: 0.8em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    color: #595959;
+}
+.your-details-r{
+    width: 50px;
+    height: 100%;
+    background-color: transparent;
+    color: black;
+    font-size: 1.4em;
+    border: none;
+    outline: none;
+    padding-top: 0.2em;
+    cursor: pointer;
+}
+.your-details-lower{
+    width: 100%;
+    height: auto;
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.your-details-lower p{
+    font-size: 0.85em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    color: white;
+    padding: 0.3em 0.4em;
+}
+.coupons-head-text{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 0.2em;
+}
+.coupons-head-text img{
+    width: 30px;
+    height: 30px;
+}
+.coupons-comp{
+    width: 100%;
+    height: auto;
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0.5em 0;
+}
+.coupons-comp-disc-head{
+    width: auto;
+    height: 35px;
+    background-color: black;
+    color: #ccc;
+    font-size: 0.9em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    text-align: left;
+    padding: 0.35em 0.4em;
+    margin: 0.6em 0.6em 0 0.6em;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.coupons-comp-common-list{
+    width: 98%;
+    height: 175px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: auto;
+    margin: 0 auto;
+}
+.coupons-comp-common-list ul{
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    list-style: none;
+}
+.coupons-comp-common-list ul li{
+    width: auto;
+    height: auto;
+    margin: 0 0.6em 0 0;
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none;
+}
+/* scroll bar for coupons  */
+.coupons-comp-common-list::-webkit-scrollbar {
+    height: 6px;
+}
+.coupons-comp-common-list::-webkit-scrollbar-track {
+    background: transparent; 
+}
+.coupons-comp-common-list::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 5px; 
+}
+.coupons-comp-common-list::-webkit-scrollbar-thumb:hover {
+    background: #f2f2f2; 
+}
+.cancellation-policy{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.cancellation-policy-head-text p{
+    color: black;
+    font-size: 1em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    padding: 0.5em 1em;
+}
+.cancellation-policy-description{
+    width: auto;
+    height: auto;
+    background-color: #262626;
+    color: #8c8c8c;
+    font-size: 0.9em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    padding: 0.4em;
+}
+.order-confirmation-comp{
+    width: 100%;
+    height: 210px;
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em 0 0 0;
+    padding: 0.5em 0;
+}
+.change-order-address-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0.3em 0;
+}
+.location-img{
+    width: 30px;
+    height: 30px;
+}
+.location-img img{
+    width: 100%;
+    height: 100%;
+}
+.order-addresses{
+    width: calc(100% - 110px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.2em;
+}
+.order-addresses-head-text{
+    font-size: 0.9em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    color: white;
+}
+.order-addresses-default-address{
+    width: auto;
+    height: auto;
+    font-size: 0.8em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    color: #8c8c8c;
+}
+.change-order-delivery-address-btn{
+    width: 70px;
+    height: 35px;
+    background-color: transparent;
+    color: white;
+    font-size: 0.9em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0 0 0.6em 0;
+    margin: 0 0.2em 0 auto;
+}
+.order-delivery-time-comp{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.order-delivery-time-comp img{
+    width: 30px;
+    height: 30px;
+}
+.order-delivery-time{
+    font-size: 0.9em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    color: white;
+    margin: 0 0.2em;
+}
+.order-confirmation-payment-comp{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.order-confirmation-payment-type-btn{
+   width: 140px;
+   height: 35px;
+   background-color: white;
+   color: black;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   font-size: 0.85em;
+   font-family: "Poppins",sans-serif;
+   font-weight: 500;
+   text-align: center;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   margin: 0 0 0 0.5em;
+}
+.select-payment-type-section{
+    width: 140px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 5px;
+   margin: 0 0 0 0.5em;
+}
+.select-payment-type-section span{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    padding-top: 0.25em;
+    font-size: 0.85em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    color: black;
+    background-color: transparent;
+    cursor: pointer;
+    border-bottom: 2px solid #ccc;
+}
+.order-confirmation-place-order-btn{
+    width: 180px;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 0.5em 0 auto;
+}
+.order-confirmation-t-p{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0.2em 0 0 0.3em;
+}
+.order-confirmation-p{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.order-confirmation-p p{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: black;
+}
+.order-confirmation-t{
+    font-size: 0.82em;
+    font-weight: 500;
+    font-family: "Poppins",sans-serif;
+    color: black;
+    text-align: left;
+    padding-left: 0.1em;
+}
+.order-confirmation-p-o{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.1em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    color: black;
+}
+.change-order-delivery-address-section{
+    width: 350px;
+    height: 75vh;
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1em 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.change-order-delivery-address-add-btn{
+    width: 95%;
+    height: 40px;
+    background-color: white;
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    margin: 0.3em auto;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+}
+.all-order-delivery-address{
+    width: 100%;
+    height: 400px;
+    margin: 0.5em 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.all-order-delivery-address ul{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.all-order-delivery-address ul li{
+    width: auto;
+    height: auto;
+    margin: 0.5em 0 0 0;
+    overflow: hidden;
+}
+/* scroll bar for order address section  */
+.all-order-delivery-address::-webkit-scrollbar {
+    width: 6px;
+}
+.all-order-delivery-address::-webkit-scrollbar-track {
+    background: transparent; 
+}
+.all-order-delivery-address::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 5px; 
+}
+.all-order-delivery-address::-webkit-scrollbar-thumb:hover {
+    background: #f2f2f2; 
+}
+.update-order-delivery-address{
+    width: 95%;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 0 0 0.65em;
+}
+.update-order-delivery-address img{
+    width: 30px;
+    height: 30px;
+    margin: 0 0.2em;
+}
+.update-order-delivery-address-text{
+    width: calc(100% - 110px);
+    height: 100%;
+    color: #595959;
+    font-size: 0.75em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    padding: 0 0.3em;
+    overflow: hidden;
+    cursor: pointer;
+}
+.update-order-delivery-address-btn{
+    width: 33px;
+    height: 100%;
+    background-color: transparent;
+    font-size: 1.1em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    margin: 0 0 0 0.2em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 430px){
+    .order-confirmation-page{
+        margin: 0.5em 0 0 0;
+    }
+    .your-order-display-ul-li{
+        width: 150px;
+    }
+    .your-order-head-text{
+        font-size: 1em;
+        padding: 0.5em 0.4em;
+    }
+    .your-order-edit-btn{
+        margin: auto 0.5em;
+    }
+    .coupons-comp-disc-head{
+        font-size: 0.7em;
+        padding: 0.7em 0.4em;
+    }
+    .your-details-lower p{
+        padding: 0.2em 0.3em;
+    }
+    .cancellation-policy-description{
+        font-size: 0.8em;
+    }
+    .change-order-delivery-address-btn{
+       padding: 0 0 1em 0;
+    }
+    .order-confirmation-pay-type-btn{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .change-order-delivery-address-section{
+        width: 95%;
+    }
+}

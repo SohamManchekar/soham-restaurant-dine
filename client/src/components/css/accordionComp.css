@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.placed-order-comp{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.placed-order-comp-head{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0.2em;
+}
+.placed-order-comp-head-order-id{
+    font-size: 1.2em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    color: #333;
+}
+.placed-order-comp-head-ispaid{
+    font-size: 1em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+}
+.placed-order-comp-head-isDelivered{
+    font-size: 1em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    margin: 0 auto;
+    padding-top: 0.3em;
+}
+.placed-order-comp-main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.place-order-comp-main-head{
+    width: 100%;
+    height: 40px;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    padding: 0.4em;
+}
+.placed-order-comp-main-items{
+    width: 100%;
+    height: 270px;
+    display: flex;
+    flex-direction: row;
+    margin: 0.3em 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+/* scroll bar for ordered dish  */
+.placed-order-comp-main-items::-webkit-scrollbar {
+    height: 6px;
+}
+.placed-order-comp-main-items::-webkit-scrollbar-track {
+    background: transparent; 
+}
+.placed-order-comp-main-items::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 5px; 
+}
+.placed-order-comp-main-items-ul{
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    list-style: none;
+}
+.placed-order-comp-main-items-ul-li{
+    width: 250px;
+    height: 250px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none;
+    margin: 0 0.35em;
+}
+
+
+
+@media screen and (max-width: 430px){
+    .placed-order-comp-main-items{
+        height: 200px;
+    }
+    .placed-order-comp-main-items-ul-li{
+        width: 150px;
+        height: 170px;
+    }
+    .placed-order-comp-head-order-id{
+        font-size: 0.85em;
+    }
+    .placed-order-comp-head-ispaid{
+        font-size: 0.8em;
+    }
+    .placed-order-comp-head-isDelivered{
+        font-size: 0.85em;
+    }
+    .place-order-comp-main-head{
+        font-size: 0.9em;
+    }
+}

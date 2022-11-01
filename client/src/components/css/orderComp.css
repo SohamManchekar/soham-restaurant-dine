@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.placed-order-item-comp{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.placed-order-item-comp-img{
+    width: 100%;
+    height: 50%;
+}
+.placed-order-item-comp-img img{
+    width: 100%;
+    height: 100%;
+}
+.placed-order-item-comp-det{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.placed-order-item-comp-det-title{
+    font-size: 1.2em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    color: black;
+    padding: 0.2em;
+}
+.place-order-item-comp-det-rating{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.2em;
+}
+.place-order-item-comp-det-rating-num{
+    font-size: 0.9em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    color: #666;
+    padding: 0.1em 0 0 0.3em;
+}
+.place-order-item-comp-det-desc{
+    width: auto;
+    height: auto;
+    font-size: 0.85em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    color: #999;
+    padding: 0.2em;
+}
+.place-order-item-comp-det-price{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.2em;
+}
+.place-order-item-comp-det-price p{
+    font-size: 1em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    color: #262626;
+}
+
+
+@media screen and (max-width: 430px){
+    .placed-order-item-comp-det-title, .place-order-item-comp-det-price p{
+        font-size: 0.9em;
+    }
+    .place-order-item-comp-det-rating{
+        display: none;
+    }
+    .place-order-item-comp-det-desc{
+        font-size: 0.75em;
+    }
+}

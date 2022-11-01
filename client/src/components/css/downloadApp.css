@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.download-app-comp{
+    width: 100%;
+    height: 65vh;
+    background-color: black;
+    margin: 5em 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.download-app-comp-img{
+    width: 270px;
+    height: 100%;
+    margin: 0 0.5em 0 0;
+}
+.download-app-comp-img img{
+    width: 100%;
+    height: 100%;
+}
+.download-app-comp-main{
+    width: 500px;
+    height: 100%;
+    margin: 0 0.2em;
+    display: flex;
+    flex-direction: column;
+}
+.download-app-comp-main-head-text{
+    width: 100%;
+    height: auto;
+    color: white;
+    font-size: 2em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    padding: 0.3em 0 0 0.4em;
+}
+.download-app-comp-main-head-desc{
+    width: 100%;
+    height: auto;
+    color: #666666;
+    font-size: 1em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    padding: 0.3em 0 0 0.8em;
+}
+.download-app-comp-main-email-section{
+    width: 97.5%;
+    height: 100px;
+    margin: 1em 0 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.download-app-comp-main-email-head-text{
+    width: 100%;
+    height: auto;
+    color: white;
+    font-size: 1em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    padding: 0.3em 0;
+}
+.download-app-comp-main-email-add{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    margin: auto 0;
+}
+.download-app-comp-main-email-inp{
+    width: 65%;
+    height: 100%;
+    background-color: white;
+    color: #595959;
+    font-size: 1em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 0.5em;
+}
+.download-app-comp-main-email-btn{
+    width: 140px;
+    height: 100%;
+    background-color: white;
+    color: black;
+    font-size: 0.95em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 0 0 1em;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.download-app-comp-main-dl{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em 0 0 0;
+}
+.download-app-comp-main-dl-head-text{
+    width: 100%;
+    height: auto;
+    color: #ccc;
+    font-size: 1em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    padding: 0.2em 0.75em;
+}
+.download-app-comp-main-d-b{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.download-app-comp-main-d-b-gp{
+    width: 160px;
+    height: 65px;
+    cursor: pointer;
+}
+.download-app-comp-main-d-b-as{
+    width: 160px;
+    height: 47px;
+    margin: 0.55em 0 0 0.5em;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:840px){
+    .download-app-comp{
+        height: 45vh;
+    }
+    .download-app-comp-img{
+        width: 280px;
+    }
+    .download-app-comp-main{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .download-app-comp{
+        height: 40vh;
+    }
+    .download-app-comp-img{
+        display: none;
+    }
+    .download-app-comp-main{
+        width: 100%;
+    }
+    .download-app-comp-main-head-text{
+        font-size: 1.4em;
+    }
+    .download-app-comp-main-head-desc{
+        font-size: 0.9em;
+    }
+    .download-app-comp-main-email-head-text{
+        font-size: 0.9em;
+    }
+    .download-app-comp-main-email-inp{
+        width: 68%;
+        font-size: 0.9em;
+    }
+    .download-app-comp-main-email-btn{
+        width: 120px;
+        font-size: 0.85em;
+        margin: 0 0 0 0.5em;
+    }
+}

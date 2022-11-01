@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer-comp{
+    width: 100%;
+    height: auto;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    padding: 0.3em 0;
+}
+.footer-comp-head-text{
+    width: 95%;
+    height: 50px;
+    margin: 0 auto;
+    color: #ccc;
+    font-size: 2em;
+    font-weight: 900;
+    font-family: 'Righteous',cursive;
+    cursor: pointer;
+    padding: 0.3em 0 0 0.3em;
+}
+.footer-comp-main{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em auto 0.2em auto;
+}
+.rows{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.row{
+    width: calc(100% - 250px);
+    height: 28vh;
+    display: flex;
+    flex-direction: row;
+}
+.col{
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.col1{
+    display: none;
+}
+.col-ul{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+    padding: 0.2em 0.5em;
+}
+.col-ul h4{
+    color: #e6e6e6;
+    font-family: "Poppins",sans-serif;
+    padding-left: 0.15em;
+}
+.col-ul-li{
+    width: auto;
+    height: auto;
+    font-size: 0.9em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+    color: #808080;
+    margin: 0.2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.col-ul-li:hover{
+    color: white;
+}
+.col-ul-li-img{
+    width: 40px;
+    height: 40px;
+}
+.download-section{
+    width: auto;
+    height: 28vh;
+    margin: 0 0.3em;
+}
+.download-app-head-text{
+    font-size: 1em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    color: #ccc;
+    padding: 0.2em 0.4em;
+}
+.download-app-head-img{
+    width: 160px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    margin: 0.3em;
+}
+.download-app-from-gp{
+    width:100%;
+    height: 65px;
+    margin:0.2em 0;
+    cursor:pointer;
+}
+.download-app-from-as{
+    width:100%;
+    height:47px;
+    margin:0.2em 0;
+    cursor:pointer;
+}
+.copyright-text{
+    width: 95%;
+    height: auto;
+    color: #808080;
+    font-size: 0.9em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin: 0.2em auto;
+    padding: 0.8em 0;
+}
+
+@media screen and (max-width: 840px){
+    .row{
+        height: 22vh;
+    }
+    .col{
+        width: 30%;
+    }
+    .download-section{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .footer-comp-main{
+        width: 97%;
+        margin: 0 auto;
+    }
+    .rows{
+        flex-direction: column;
+    }
+    .row{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .col{
+        width: auto;
+    }
+    .footer-comp-head-text{
+        font-size: 1.5em;
+    }
+    .col-ul h4{
+        font-size: 0.85em;
+        font-weight: 500;
+    }
+    .col-ul-li{
+        font-size: 0.78em;
+    }
+    .col-ul-li-img{
+        width: 25px;
+        height: 25px;
+    }
+    .download-section{
+        height: auto;
+        margin: 0;
+    }
+    .download-app-head-text{
+        font-size: 0.9em;
+        font-weight: 500;
+        padding: 0 0.4em;
+    }
+    .download-app-head-img{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0.3em 0;
+    }
+    .download-app-from-gp, .download-app-from-as{
+        width: 160px;
+    }
+    .copyright-text{
+       font-size: 0.8em;
+    }
+}

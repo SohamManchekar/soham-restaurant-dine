@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cart-dish-comp{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.cart-dish-comp-img{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 0.5em;
+}
+.cart-dish-comp-img img{
+    width: 100%;
+    height: 100%;
+}
+.cart-dish-comp-details{
+    width: calc(100% - 160px);
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+.cart-dish-comp-header{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-dish-comp-title{
+    width: auto;
+    height: 100%;
+    font-size: 1.3em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    color: black;
+    padding: 0.2em 0.5em;
+}
+.cart-dish-comp-del-btn{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    font-size: 1.3em;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 0.3em;
+    padding: 0.2em 0 0 0;
+}
+.cart-dish-comp-rating{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0.1em 0.3em;
+}
+.cart-dish-comp-rating-num{
+    width: auto;
+    height: auto;
+    font-size: 1em;
+    font-family: "Poppins",sans-serif;
+    color: #808080;
+    margin: -0.2em 0.3em;
+}
+.cart-dish-comp-prt{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cart-dish-comp-price{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.1em;
+    font-weight: 500;
+    font-family: "Poppins",sans-serif;
+    color: black;
+    margin: 0 0.5em;
+    padding: 0 0.2em;
+}
+.cart-dish-comp-time{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 0.5em;
+}
+.cart-dish-comp-time img{
+    width: 60px;
+    height: 100%;
+    cursor: pointer;
+}
+.cart-dish-comp-timer{
+    width: auto;
+    height: 100%;
+    font-size: 1em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    color: black;
+    padding-top: 0.5em;
+}
+.cart-dish-comp-desc{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    font-family: "Poppins",sans-serif;
+    padding: 0.2em 0.5em;
+}
+.cart-dish-comp-desc-1{
+    font-weight: 500;
+    font-size: 1.1em;
+}
+.cart-dish-comp-desc-2{
+    font-weight: 400;
+    font-size: 0.8em;
+}
+.cart-dish-comp-edit-qty{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cart-dish-comp-qty{
+    font-size: 1em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    color: black;
+    padding: 0.2em 0.5em;
+}
+.cart-dish-comp-edit-btn{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    font-size: 1.3em;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 0.3em;
+    padding: 0.2em 0 0 0;
+}
+.cart-dish-comp-update-qty{
+    width: 300px;
+    height: 170px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.cart-dish-comp-update-qty-tc{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-dish-comp-update-qty-text{
+    font-size: 1.2em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    color: black;
+    padding: 0 0.5em;
+}
+.cart-dish-comp-update-qty-close{
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 1.4em;
+    cursor: pointer;
+    padding: 0.2em 0.32em;
+}
+.cart-dish-comp-qty-inc-dec{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.cart-dish-comp-qty-inp{
+    width: 100px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+}
+.cart-dish-comp-in-de-btn{
+    width: 40px;
+    height: 40px;
+    background-color: #e6e6e6;
+    color: black;
+    font-size: 1.3em;
+    border: none;
+    outline: none;
+    padding: 0.5em;
+    cursor: pointer;
+}
+.cart-dish-comp-conf-can{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0.3em;
+}
+.cart-dish-comp-cc-btn{
+    width: 40%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 1.05em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 430px){
+    .cart-dish-comp{
+        height: 120px;
+    }
+    .cart-dish-comp-img{
+        width: 80px;
+        height: 80px;
+        margin: 0 0.2em;
+    }
+    .cart-dish-comp-details{
+        width: calc(100% - 90px);
+        justify-content: space-evenly;
+    }
+    .cart-dish-comp-header{
+        height: 32px;
+    }
+    .cart-dish-comp-rating{
+        padding: 0.1em 0.6em;
+    }
+    .cart-dish-comp-del-btn{
+        margin: 0 0.1em;
+    }
+    .cart-dish-comp-title{
+        font-size: 1.15em;
+    }
+    .cart-dish-comp-prt{
+        height: 30px;
+    }
+    .cart-dish-comp-price{
+        font-size: 1.1em;
+    }
+    .cart-dish-comp-time img{
+        width: 50px;
+    }
+    .cart-dish-comp-timer{
+        font-size: 0.85em;
+    }
+    .cart-dish-comp-desc{
+        display: none;
+    }
+   .cart-dish-comp-edit-qty{
+        height: 32px;
+   }
+   .cart-dish-comp-edit-btn{
+        font-size: 1.2em;
+   }
+}

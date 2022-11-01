@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.comment-comp{
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em 0;
+    border-radius: 5px;
+}
+.comment-comp-img-name{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    margin: 0.3em 0;
+}
+.comment-comp-igna{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.6em;
+}
+.comment-comp-user-cd-btn{
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    color: black;
+    font-size: 1.8em;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 0 0.3em 0 auto;
+}
+.comment-comp-img{
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    color: black;
+    font-size: 1.3em;
+    font-family: "Poppins",sans-serif;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 0.35em;
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+.comment-comp-user-name{
+    width: auto;
+    height: 100%;
+    color: #d9d9d9;
+    font-size: 1.4em;
+    font-family: "Poppins",sans-serif;
+    padding: 0.25em 0.4em;
+}
+.comment-comp-rating-type-time{
+    width: auto;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1.5em;
+}
+.comment-comp-user-rating{
+    width: 30px;
+    height: 30px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+}
+.comment-comp-user-rating p{
+    font-size: 1em;
+    font-family: "Poppins",sans-serif;
+    color: black;
+}
+.comment-comp-user-choose-type, .comment-comp-user-created-at{
+    width: auto;
+    height: auto;
+    font-size: 0.9em;
+    font-family: "Poppins",sans-serif;
+    color: whitesmoke;
+    padding: 0.7em 0.3em;
+    margin: 0 0.2em;
+}
+.comment-comp-user-created-at{
+    color: #aaa;
+    padding: 0.73em 0.3em;
+}
+.comment-comp-comment-reply-section{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 1em;
+    padding: 0.3em 0;
+}
+.comment-comp-user-comment{
+    width: 100%;
+    height: auto;
+    font-size: 1em;
+    font-family: "Poppins",sans-serif;
+    color: white;
+    padding: 0.3em 0.5em;
+}
+.comment-comp-all-user-reply, .comment-comp-all-user-likes{
+    width: 90%;
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0.5em 0;
+    padding: 0.2em 0;
+    display: block;
+}
+.comment-comp-all-user-like-desc{
+    width: 89%;
+    height: 40px;
+    font-size: 1em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    background-color: #404040;
+    border-radius: 10px 10px 0 0;
+}
+/* scroll bar for comments  */
+.comment-comp-all-user-reply::-webkit-scrollbar {
+    width: 6px;
+}
+.comment-comp-all-user-reply::-webkit-scrollbar-track {
+    background: transparent; 
+}
+.comment-comp-all-user-reply::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 5px; 
+}
+.comment-comp-all-user-reply::-webkit-scrollbar-thumb:hover {
+    background: #f2f2f2; 
+}
+
+/* scroll bar for likes  */
+.comment-comp-all-user-likes::-webkit-scrollbar {
+    width: 6px;
+}
+.comment-comp-all-user-likes::-webkit-scrollbar-track {
+    background: transparent; 
+}
+.comment-comp-all-user-likes::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 5px; 
+}
+.comment-comp-all-user-likes::-webkit-scrollbar-thumb:hover {
+    background: #f2f2f2; 
+}
+.comment-comp-all-user-reply-ul, .comment-comp-all-user-likes-ul{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+.comment-comp-all-user-reply-li{
+    width: 98%;
+    height: auto;
+    overflow: hidden;
+}
+.comment-comp-all-user-likes-li{
+    width: 98%;
+    height: auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+.comment-comp-user-reply{
+    width: 98%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0.5em auto 0;
+}
+.user-reply-inp{
+    width: calc(100% - 80px);
+    height: 100%;
+    background-color: white;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    font-family: "Poppins",sans-serif;
+    color: black;
+    padding: 0 0.5em;
+}
+.user-reply-btn{
+    width: 80px;
+    height: 100%;
+    background-color: #ccc;
+    color: black;
+    font-size: 1.2em;
+    font-family: "Poppins",sans-serif;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.comment-comp-lengths{
+    width: 95%;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0.8em;
+}
+.comment-comp-lengths-btn{
+    width: auto;
+    height: auto;
+    font-size: 0.9em;
+    font-weight: 500;
+    font-family: "Poppins",sans-serif;
+    background-color: transparent;
+    color: #737373;
+    border: none;
+    outline: none;
+    margin: 0 0.5em;
+    padding: 0 0.2em;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.comment-comp-lengths-btn:hover{
+    color: #ccc;
+}
+.comment-comp-option{
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 0.5em 1em;
+}
+.comment-option-btn{
+    width: auto;
+    height: 35px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 0.6em;
+    border-radius: 5px;
+}
+.comment-option-text{
+    font-size: 1em;
+    font-family: "Poppins",sans-serif;
+}
+.no-comment-msg{
+    width: 100%;
+    height: auto;
+    font-size: 1.3em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    color: white;
+    padding: 0.4em 0.5em;
+}
+
+@media screen and (max-width: 450px){
+    .comment-comp-igna{
+        margin-left: 0;
+    }
+    .comment-comp-img{
+        width: 40px;
+        height: 40px;
+        font-size: 1.08em;
+        margin-left: 0.3em;
+        padding-top: 0.42em;
+    }
+    .comment-comp-user-name{
+        font-size: 1.13em;
+        font-weight: 500;
+    }
+    .comment-comp-user-cd-btn{
+        width: 35px;
+        height: 35px;
+        font-size: 1.4em;
+    }
+    .comment-comp-user-rating{
+        width: 30px;
+        height: 20px;
+        font-size: 0.78em;
+    }
+    .comment-comp-rating-type-time{
+        margin-left: 0.6em;
+    }
+    .comment-comp-user-created-at, .comment-comp-user-choose-type{
+        padding: 0 0.3em;
+        margin: 0;
+        font-size: 0.85em;
+        font-weight: 500;
+    }
+    .comment-comp-comment-reply-section{
+        margin: 0;
+        padding: 0.1em 0;
+    }
+    .comment-comp-user-comment{
+        font-size: 0.9em;
+        font-weight: 500;
+    }
+    .comment-comp-all-user-like-desc{
+        font-size: 0.88em;
+    }
+    .comment-comp-reply-option{
+        margin: 0 0 0.3em 0;
+    }
+    .comment-comp-all-user-reply{
+        width: 80%;
+        padding: 0;
+        margin: 0.5em;
+    }
+    .comment-comp-user-reply{
+        margin: 0.6em auto;
+    }
+    .user-reply-inp{
+        font-size: 0.9em;
+    }
+    .user-reply-btn{
+        font-weight: 500;
+    }
+    .comment-comp-lengths{
+        margin: 0;
+    }
+    .comment-comp-lengths-btn{
+        margin: 0 0.3em;
+        font-size: 0.83em;
+    }
+    .comment-comp-option{
+        margin: 0 0 0.2em 0;
+    }
+}

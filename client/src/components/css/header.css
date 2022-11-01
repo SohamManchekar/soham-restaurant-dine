@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-det{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo{
+    width: 60px;
+    height: 100%;
+    background-color: transparent;
+    padding: 2px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.logo-name{
+    width: auto;
+    height: 100%;
+    color: #ccc;
+    font-size: 2.5em;
+    font-weight: 900;
+    font-family: 'Righteous',cursive;
+    padding: 0.43em 0.4em;
+    cursor: pointer;
+}
+.user-panel{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.signLog-btn{
+    width: 120px;
+    height: 40px;
+    color: whitesmoke;
+    font-size: 1.2em;
+    font-family: "Poppins";
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.3s;
+}
+.one{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3),rgba(0,0,0,0.6)),url("https://media.istockphoto.com/photos/shahi-paneer-or-paneer-kadai-picture-id1305516603?k=20&m=1305516603&s=612x612&w=0&h=9z7YhLKh9CflB1tervIRpx_u06Ybfttf_8zfCqV1C9w=");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.two{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2),rgba(0,0,0,0.6)),url("https://media.istockphoto.com/photos/chicken-biriyani-picture-id1345624336?k=20&m=1345624336&s=612x612&w=0&h=0TSxrGelLdgZnvhZlfIcOq07y03Ioym4hRZOivZeXfI=");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.signLog-btn:hover{
+    transform: scale(1.07,1.07);
+}
+.user-end{
+    width: 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5em;
+}
+.user-btn{
+    width: 45px;
+    height: 45px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.3em;
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+    padding: 0.3em 0;
+    margin: 0 0.35em;
+    cursor: pointer;
+    overflow: hidden;
+}
+.user-btn img{
+    width: 100%;
+    height: 100%;
+    padding: 0.2em;
+}
+.menu-bar{
+    width: 60px;
+    height: 100%;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.menu-btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1.8em;
+}
+.menu-details{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+    top: -210px;
+    left: 0;
+    position: fixed;
+    transition: 0.5s;
+}
+.menu-close{
+    width: 45px;
+    height: 45px;
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    top: 7.5px;
+    right: 6px;
+    position: absolute;
+    font-size: 1.8em;
+    padding: 5px 0 0 2px;
+}
+
+
+@media screen and (max-width: 780px){
+    .header{
+        height: 60px;
+        justify-content: space-between;
+    }
+    .logo-det{
+        width: 50%;
+    }
+    .logo-name{
+        padding: 0.4em 0.4em;
+        font-size: 2.3em;
+    }
+    .user-panel{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .logo-det{
+        width: 90%;
+    }
+    .logo-name{
+        margin-left: 1.8em;
+        padding-top: 0.2em;
+    }
+    .user-panel{
+        display: none;
+    }
+    .menu-bar{
+        display: flex;
+    }
+    .user-end{
+        margin-right: 0;
+    }
+} 
+
+@media screen and (max-width: 415px){
+    .logo{
+        height: 85%;
+    }
+    .logo-name{
+        margin-left: 1.5em;
+    }
+}
+
+@media screen and (max-width: 378px){
+    .logo-name{
+        margin-left: 1.4em;
+    }
+}
+
+@media screen and (max-width: 365px){
+    .logo-name{
+        margin-left: 1.15em;
+    }
+}

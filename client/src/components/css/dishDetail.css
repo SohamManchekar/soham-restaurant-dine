@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dish-detail-page{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+}
+.dish-detail-comp{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to right, #000000, #434343, #0d0d0d); 
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 3em 0;
+}
+.dish-detail-img{
+    width: 420px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 1em;
+}
+.dish-detail-img img{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+.dish-detail-img img:hover{
+    transform: scale(1.2,1.2);
+}
+.dish-details{
+    width: 50%;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dish-name{
+    width: 100%;
+    height: auto;
+    font-size: 2em;
+    font-family: "Poppins",sans-serif;
+    padding: 0.1em 0.3em;
+    color: white;
+}
+.dish-rating{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0.1em 0.3em;
+    margin-top: 0.2em;
+}
+.dish-rating-num{
+    width: auto;
+    height: auto;
+    font-size: 1em;
+    font-family: "Poppins",sans-serif;
+    color: #aaa;
+    margin: 0em 0.3em;
+}
+.dish-desc{
+    width: 100%;
+    height: auto;
+    color: #666;
+    font-size: 1.3em;
+    font-family: "Poppins",sans-serif;
+    padding: 0.1em 0.5em;
+    margin-top: 0.2em;
+}
+.dish-price-time{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.dish-price{
+    width: 120px;
+    height: 40px;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding-left: 0.5em;
+    margin-left: 0.3em;
+}
+.dish-time{
+    width: 160px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 1em;
+}
+.dish-time img{
+    width: 60px;
+    height: 100%;
+    cursor: pointer;
+}
+.dish-time p{
+    width: auto;
+    height: 100%;
+    color: #e6e6e6;
+    padding: 0.5em 0.2em;
+    font-size: 1.2em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+}
+.dish-qty{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.dish-qty-label{
+    width: auto;
+    height: 100%;
+    color: #ccc;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 0.5em 0.2em;
+    margin-left: 0.5em;
+    outline: none;
+    border: none;
+}
+.dish-qty-inc-dec{
+    width: auto;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: 1em;
+}
+.dish-in-de-btn{
+    width: 40px;
+    height: 100%;
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    padding: 0.6em 0;
+    cursor: pointer;
+}
+.dish-qty-inp{
+    width: 80px;
+    height: 100%;
+    background-color: white;
+    color: black;
+    font-size: 1.3em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.dish-other-details{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.dish-a-o-btn{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.dish-tc{
+    width: 100%;
+    height: 45%;
+    color: #8c8c8c;
+    font-size: 1em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    padding: 0.3em 0.5em;
+}
+.dish-add-to-cart{
+    width: 45%;
+    height: 40px;
+    background-color: white;
+    color: black;
+    margin-top: 0.42em;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.order-now-section{
+    width: 360px;
+    height: 75vh;
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.order-now-comp{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.order-now-comp::-webkit-scrollbar {
+    width: 6px;
+}
+.order-now-comp::-webkit-scrollbar-track {
+    background: transparent; 
+}
+.order-now-comp::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 5px; 
+}
+.order-now-comp::-webkit-scrollbar-thumb:hover {
+    background: #f2f2f2; 
+}
+.order-now-comp-main{
+    width: 100%;
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
+}
+.order-now-comp-t-c{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.order-now-comp-close-btn{
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.order-now-comp-dish-det{
+    width: 95%;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.2em auto;
+    border-radius: 5px;
+}
+.order-now-comp-dish-det img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 0 0 0.2em;
+}
+.order-now-comp-pay-type{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.order-now-comp-pay-type-btn, .order-now-comp-confirm-btn{
+    width: 90%;
+    height: 40px;
+    background-color: white;
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* recommend page starts  */
+.dish-recommend-page{
+    width: 95%;
+    height: auto;
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.dish-recommend-text{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 1.8em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    padding: 0.2em 0.4em;
+}
+.dish-recommend-comp{
+    width: 100%;
+    height: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
+    background-color: transparent;
+    margin: 0.3em 0;
+}
+.dish-recommend-comp::-webkit-scrollbar {
+    height: 6px;
+}
+.dish-recommend-comp::-webkit-scrollbar-track {
+    background: transparent; 
+}
+.dish-recommend-comp::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 5px; 
+}
+.dish-recommend-comp::-webkit-scrollbar-thumb:hover {
+    background: #f2f2f2; 
+}
+.dish-recommend-comp ul{
+    display: inline-flex;
+    list-style: none;
+}
+.dish-recommend-comp ul li{
+    width: auto;
+    height: auto;
+}
+/* recommend page ends  */
+
+
+@media screen and (max-width: 1030px){
+    .dish-detail-comp{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 840px){
+    .dish-detail-comp{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom, #000000, #434343, #0d0d0d); 
+        flex-direction: column;
+    }
+    .dish-details{
+        width: 100%;
+    }
+    .dish-detail-img{
+        margin: 1em 0;
+    }
+    .dish-time p{
+        font-size: 1.3em;
+        padding: 0.25em 0.2em;
+    }
+    .dish-tc{
+        font-size: 1.3em;
+        padding: 0.2em 0.5em;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .dish-detail-img{
+        width: 340px;
+        height: 340px;
+    }
+    .dish-detail-img img:hover{
+       transform: none;
+    }
+    .dish-name{
+        font-size: 1.6em;
+    }
+    .dish-desc{
+        font-size: 1.2em;
+    }
+    .dish-tc{
+        font-size: 1.1em;
+    }
+    .dish-a-o-btn{
+        height: 120px;
+        flex-direction: column;
+    }
+    .dish-add-to-cart{
+        width: 80%;
+        height: 45px;
+    }
+    .dish-recommend-page{
+        width: 100%;
+    }
+    .dish-recommend-comp ul li{
+        margin: 0 1em;
+    }
+    .order-now-section{
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 365px){
+    .dish-detail-img{
+        width: 330px;
+        height: 330px;
+    }
+    .dish-name{
+        font-size: 1.4em;
+    }
+}

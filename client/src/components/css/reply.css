@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.reply-comp{
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    margin: 0.25em 0;
+    border-radius: 10px 10px 0 10px;
+    overflow: hidden;
+}
+.reply-comp-img-userName{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.reply-comp-img{
+    width: 45px;
+    height: 45px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.3em;
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+    padding: 0.32em 0;
+    margin: 0 0.35em;
+    cursor: pointer;
+}
+.reply-comp-userTime{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.reply-comp-userName{
+    width: auto;
+    height: auto;
+    color: black;
+    font-size: 1.1em;
+    font-family: "Poppins",sans-serif;
+    margin-top: 0.4em;
+    padding: 0 0.2em;
+}
+.reply-comp-created-at{
+    width: auto;
+    height: auto;
+    color: #262626;
+    font-size: 0.7em;
+    font-family: "Poppins",sans-serif;
+    padding: 0 0.2em;
+}
+.comment-user-name{
+    width: auto;
+    height: auto;
+    font-size: 0.9em;
+    font-family: "Poppins",sans-serif;
+    color: #000099;
+    padding: 0 0.7em;
+}
+.reply-comp-text-likeComp{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.reply-comp-text{
+    width: calc(100% - 50px);
+    height: auto;
+    font-size: 0.9em;
+    font-family: "Poppins",sans-serif;
+    color: black;
+    padding: 0.2em;
+    margin: 0 0 0 0.5em;
+}
+.reply-comp-like-btn{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    color: #ff0000;
+    font-size: 0.9em;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    margin: 0 auto;
+}
+.reply-comp-option{
+    width: 100%;
+    height: 30px;
+    margin: 0.2em 0;
+    display: flex;
+    align-items: center;
+}
+.reply-option-btn{
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    color: #595959;
+    font-size: 0.9em;
+    font-weight: 500;
+    font-family: "Poppins",sans-serif;
+    padding: 0 0.3em;
+    margin: 0 0.5em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.reply-option-btn:hover{
+    color: black;
+}
+.reply-comp-del-btn{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    color: black;
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 0.3em 0.5em auto;
+}
+.reply-comp-all-user-likes{
+    width: 100%;
+    max-height: 350px;
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.reply-comp-all-user-likes::-webkit-scrollbar {
+    width: 6px;
+}
+.reply-comp-all-user-likes::-webkit-scrollbar-track {
+    background: transparent; 
+}
+.reply-comp-all-user-likes::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 5px; 
+}
+.reply-comp-all-user-likes::-webkit-scrollbar-thumb:hover {
+    background: #f2f2f2; 
+}
+.reply-comp-desc-like-close{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.reply-comp-like-length{
+    width: auto;
+    height: auto;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: "Poppins",sans-serif;
+    padding: 0 0.3em;
+    color: #333;
+    margin: 0 0.2em;
+}
+.reply-comp-likes-close-btn{
+    width: 30px;
+    height: 30px;
+    background-color: #e6e6e6;
+    color: black;
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 0 0.3em;
+    padding: 0.25em 0;
+    cursor: pointer;
+}
+.reply-comp-all-user-likes-ul{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+.reply-comp-all-user-likes-li{
+    width: 98%;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 450px){
+   .reply-comp-img-userName{
+        height: 45px;
+   }
+   .reply-comp-img{
+        width: 35px;
+        height: 35px;
+        font-size: 0.9em;
+        padding: 0.42em 0;
+   }
+   .reply-comp-userName{
+        font-size: 0.9em;
+        margin-top: 0.2em;
+        font-weight: 500;
+   }
+   .reply-comp-created-at{
+        font-weight: 500;
+        font-size: 0.62em;
+   }
+   .comment-user-name{
+        font-size: 0.8em;
+        font-weight: 500;
+   }
+   .reply-comp-text{
+        padding: 0.25em 0;
+        font-size: 0.78em;
+        margin-left: 0.6em;
+   }
+   .reply-option-btn{
+    font-size: 0.78em;
+   }
+   .reply-comp-like-length{
+    font-size: 0.8em;
+   }
+}
