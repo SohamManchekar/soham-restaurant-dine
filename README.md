@@ -26,6 +26,8 @@
 
 🔴 Make sure you create your own Environment variables(secret keys) for both sides.
 
+🔴 However i have not provided the menu api,so create your own database according to the schema defined.
+
 🔴 Note : you need client and backend runs concurrently in different terminal session, in order to make them talk to each other.
 
 
