@@ -50,13 +50,15 @@
   
 # Deployment
 
-🔴 Deploy Server(backend) to Heroku
+🔴 Deploy Server(Backend) to render : https://render.com/
 
-🔴 Deploy Client(client) to Netlify
+   (Earlier the server was deployed on Heroku but free Heroku Dynos are no longer available so switched to render)
+
+🔴 Deploy Client(client) to Netlify : https://www.netlify.com/
 
 *************** OR *****************
 
-🔴 Deploy both to Heroku
+🔴 Deploy both to render
 
 
 # BUGS
